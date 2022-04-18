@@ -25,6 +25,16 @@ public class Main {
 		int number_2 = 10;
 		int sum_1 = (int)number_1 + number_2;
 		System.out.println("The sum of two number is: "+sum_1);
+		
+//		4th question
+		int num12 = 90;
+		int num23 = 75;
+		int div = num12 /num23;
+		System.out.println("The  division of two number is: " +div);
+		Double result = Double.valueOf(div);
+		System.out.println("The division of two number in decimal is: "+result);
 	}
+
+	
 
 }
