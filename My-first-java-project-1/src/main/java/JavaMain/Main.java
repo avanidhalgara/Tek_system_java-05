@@ -33,6 +33,10 @@ public class Main {
 		System.out.println("The  division of two number is: " +div);
 		Double result = Double.valueOf(div);
 		System.out.println("The division of two number in decimal is: "+result);
+		
+		
+//	5th question
+		
 	}
 
 	
