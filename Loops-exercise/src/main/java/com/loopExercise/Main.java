@@ -136,6 +136,21 @@ public class Main {
 			
 		}
 		
+		System.out.println("------------------------------------------------------------");
+		System.out.println("Question 9");
+		System.out.println("");
+		
+		for (int d = 0; d <= 4; d++) {
+			for (int k = 1; k < 5; k++) {
+				System.out.println("Inner loop :"+k);
+				
+				
+			}
+			System.out.println("Outer loop:" +d);
+			
+		}
+		
+		
 		
 		
 
