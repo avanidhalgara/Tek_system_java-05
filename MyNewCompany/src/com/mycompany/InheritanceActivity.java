@@ -3,6 +3,7 @@ package com.mycompany;
 public class InheritanceActivity {
 
 	public static void main(String[] args) {
+		
 		Manager manager = new Manager(126534, "Peter","Chennai India",237844,65000);
 		 double salaryAmountManager =manager.calculateSalary();
 		 System.out.println(salaryAmountManager);
@@ -14,8 +15,21 @@ public class InheritanceActivity {
 		 double allowanceForManager = manager.calculateTransportAllownce();
 		 System.out.println(allowanceForManager);
 		 
-		 double allowanceForTrainee = trainee.calculateTransportAllowance();
-		 System.out.println(allowanceForTrainee);
+		 
+		 
+		
+		try {
+			 double allowanceForTrainee;
+			allowanceForTrainee = trainee.calculateTransportAllowance();
+			System.out.println(allowanceForTrainee);
+		throw new ArithmeticExceptions("can not divide by Zero "+ trainee.calculateTransportAllowance());
+		} catch (ArithmeticExceptions e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			
+		}
+		
+		 
 
 	}
 

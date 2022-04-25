@@ -1,6 +1,80 @@
 package com.arrayJava;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
+
+ class Book{
+	 int number;
+	 String name;
+	 String description;
+	 String review;
+	 double price;
+	 
+	 public Book() {
+		 
+	 }
+
+	public Book(int number, String name, String description, String review, double price) {
+		super();
+		this.number = number;
+		this.name = name;
+		this.description = description;
+		this.review = review;
+		this.price = price;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getReview() {
+		return review;
+	}
+
+	public void setReview(String review) {
+		this.review = review;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	@Override
+	public String toString() {
+		return "Book [number=" + number + ", name=" + name + ", description=" + description + ", review=" + review
+				+ ", price=" + price + "]";
+	}
+	
+	 
+	
+}
+ 
+ 
 
 public class Main {
 
@@ -146,7 +220,59 @@ public class Main {
 					
 					
 					
+//						/-------------------------------QUESTION 9--------------------------------------------------------
+						//	
+							System.out.println("------------------------------------------------------------");
+							System.out.println("Question 9");
+							System.out.println("");	
+							
+							
+							int[] newArray  = {4,2,9,13,1,0};
+							int array11;
+							int smallNumber = newArray[0];
+							int biggestNumber = newArray[0];
+							
+							 Arrays.sort(newArray);
+							System.out.println(
+			                           Arrays.toString(newArray));
 					
+//							for (int i = 0; i < newArray.length; i++) {
+//								 array11 = newArray[i];
+//								 System.out.print(array11);
+						
+//							}
+							for (int i = 0; i < newArray.length; i++) {
+								 if(newArray[i] > biggestNumber) {
+									 biggestNumber = newArray[i];
+								 }
+									 else if(newArray[i]< smallNumber) {
+										 smallNumber = newArray[i];
+									 }
+											 
+								
+								 
+							}
+							System.out.println("The smallest number is: "+smallNumber);	 
+							System.out.println("The biggest number is: "+biggestNumber);
+							
+							
+							Book book = new Book(1,"cat in the Hat","Cat story","Good",8.98);
+							System.out.println();
+							Book[] books = new Book[3];
+							
+							
+							ArrayList<Book> myLibrary = new ArrayList<Book>();
+							myLibrary.add(new Book(1, "Thinking In Java", "English" ,"good",10.98));
+							myLibrary.add(new Book(2, "Hacking for Fun and Profit", "English","Good", 8.98));
+							
+						 for (Book b : myLibrary) {
+							 
+							 System.out.println(b);
+						 }
+							
+						
+							
+			                           
 		
 	}
 	

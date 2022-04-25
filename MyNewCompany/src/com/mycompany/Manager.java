@@ -11,10 +11,12 @@ public class Manager extends Employee {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public double calculateTransportAllownce() {
-	
+	public double calculateTransportAllownce() {  
+	 
 		double transportAllowance = 15*basicSalary/100;
 		return transportAllowance;
+	 
+	
 	}
 	
 	

@@ -41,11 +41,14 @@ public class Employee {
 			return salary;
 	}
 	
-	public double calculateTransportAllowance() {
+	public double calculateTransportAllowance() throws ArithmeticExceptions {
 		
 		double transportAllowance = basicSalary*10/100;
 		return transportAllowance;
+	
 	}
+	
+	
 	
 	
 
